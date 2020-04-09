@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Welcome to my latest blog site, many things still need to be improved, then I will show my projects and resume here, stay tuned...">
+    <meta name="description" content="Question: Single NumberGiven a non-empty array of integers, every element appears twice except for one. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you im">
 <meta property="og:type" content="article">
-<meta property="og:title" content="leetcode-coding-challenge1">
+<meta property="og:title" content="Leetcode coding challenge day 1 notes">
 <meta property="og:url" content="http://yoursite.com/2020/04/07/leetcode-coding-challenge1/index.html">
 <meta property="og:site_name" content="Yaowen">
-<meta property="og:description" content="Welcome to my latest blog site, many things still need to be improved, then I will show my projects and resume here, stay tuned...">
+<meta property="og:description" content="Question: Single NumberGiven a non-empty array of integers, every element appears twice except for one. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you im">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-06T23:25:08.000Z">
-<meta property="article:modified_time" content="2020-04-06T23:25:08.454Z">
+<meta property="article:modified_time" content="2020-04-07T22:43:27.208Z">
 <meta property="article:author" content="Yaowen Wu">
-<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Algorithm, Leetcode, Java, bit operation">
 <meta name="twitter:card" content="summary">
     
     
@@ -37,7 +37,7 @@
         
     
     <!-- title -->
-    <title>leetcode-coding-challenge1</title>
+    <title>Leetcode coding challenge day 1 notes</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -77,6 +77,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" href="/2020/04/07/leetcode-coding-challenge2/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
         
         <li><a class="icon" href="/2020/03/12/blog-commands/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
@@ -92,21 +94,21 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/" target="_blank" rel="noopener"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&text=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&is_video=false&description=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=leetcode-coding-challenge1&body=Check out this article: http://yoursite.com/2020/04/07/leetcode-coding-challenge1/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&name=leetcode-coding-challenge1&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&t=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&text=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&is_video=false&description=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Leetcode coding challenge day 1 notes&body=Check out this article: http://yoursite.com/2020/04/07/leetcode-coding-challenge1/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&name=Leetcode coding challenge day 1 notes&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&t=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Question-Single-Number"><span class="toc-number">1.</span> <span class="toc-text">Question: Single Number</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notes"><span class="toc-number">2.</span> <span class="toc-text">Notes</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -118,7 +120,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        leetcode-coding-challenge1
+        Leetcode coding challenge day 1 notes
     </h1>
 
 
@@ -139,13 +141,41 @@
       
 
       
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/Algorithm-Leetcode-Java-bit-operation/" rel="tag">Algorithm, Leetcode, Java, bit operation</a>
+    </div>
+
 
     </div>
   </header>
   
 
   <div class="content" itemprop="articleBody">
-    
+    <h2 id="Question-Single-Number"><a href="#Question-Single-Number" class="headerlink" title="Question: Single Number"></a>Question: Single Number</h2><p>Given a <strong>non-empty</strong> array of integers, every element appears <em>twice</em> except for one. Find that single one.</p>
+<p><strong>Note:</strong></p>
+<p>Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: [2,2,1]</span><br><span class="line">Output: 1</span><br></pre></td></tr></table></figure>
+
+<p><strong>Example 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: [4,1,2,1,2]</span><br><span class="line">Output: 4</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><p>Type of question: Number of elements occurrence</p>
+<p>The key idea is to use <strong>bit operation</strong> to solve this kind of question. And here is the knowledge that we need to be familiar with:</p>
+<ol>
+<li>XOR of a number with itself is 0</li>
+<li>XOR of a number with 0 is the number itself</li>
+<li>XOR is commutative so the order of numbers does not matter</li>
+</ol>
+<p>In addition,1 &amp; 1 = 1, 0 &amp; 1 = 0, 0 &amp; 0 = 0 </p>
+<p>Take [2, 2, 3, 3, 4, 5, 5] as an example,</p>
+<p>​    2 XOR 2 = 0; 3 XOR 3 = 0; 5 XOR 5 = 0;  output: 4</p>
+<p>Take [2, 2, 3, 3, 4, 5, 5, 6] as an example,</p>
+<p>​    Similarly, but 4(100) XOR 6(110) = 010(binary), which means the second bit is different between 4 and 6. So we can divide the original array into two subarray by this difference. Then we can just perform XOR operations in two subarrays respectively. The output should be 4, 6</p>
+
   </div>
 </article>
 
@@ -170,22 +200,22 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Question-Single-Number"><span class="toc-number">1.</span> <span class="toc-text">Question: Single Number</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Notes"><span class="toc-number">2.</span> <span class="toc-text">Notes</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/" target="_blank" rel="noopener"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&text=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&is_video=false&description=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=leetcode-coding-challenge1&body=Check out this article: http://yoursite.com/2020/04/07/leetcode-coding-challenge1/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&name=leetcode-coding-challenge1&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&t=leetcode-coding-challenge1" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&text=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&is_video=false&description=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Leetcode coding challenge day 1 notes&body=Check out this article: http://yoursite.com/2020/04/07/leetcode-coding-challenge1/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&title=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&name=Leetcode coding challenge day 1 notes&description=" target="_blank" rel="noopener"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://news.ycombinator.com/submitlink?u=http://yoursite.com/2020/04/07/leetcode-coding-challenge1/&t=Leetcode coding challenge day 1 notes" target="_blank" rel="noopener"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
