@@ -14,7 +14,7 @@
 <meta property="og:description" content="Question: Happy NumberWrite an algorithm to determine if a number n is “happy”. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by t">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-07T22:42:53.000Z">
-<meta property="article:modified_time" content="2020-04-09T00:16:27.598Z">
+<meta property="article:modified_time" content="2020-04-09T00:53:02.684Z">
 <meta property="article:author" content="Yaowen Wu">
 <meta property="article:tag" content="Algorithm, Leetcode, Java, HashSet, Division and mod operations">
 <meta name="twitter:card" content="summary">
@@ -156,7 +156,11 @@
 <p>A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it <strong>loops endlessly in a cycle</strong> which does not include 1. Those numbers for which this process <strong>ends in 1</strong> are happy numbers.</p>
 <p>Return True if <code>n</code> is a happy number, and False if not. </p>
 <p><strong>Example:</strong> </p>
+<code>
+
 <p>​        Input: 19<br>​        Output: true<br>​        Explanation:<br>​        1<sup>2</sup> + 9<sup>2</sup> = 82<br>​        8<sup>2</sup> + 2<sup>2</sup> = 68<br>​        6<sup>2</sup> + 8<sup>2</sup> = 100<br>​        1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> = 1</p>
+</code>
+
 <h2 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h2><p>We can use <strong>%</strong> and <strong>/</strong> operations to get a lot of interesting things, such as each digit of an integer, or random number in a certain range.</p>
 <p>For example, we know:</p>
 <ol>
